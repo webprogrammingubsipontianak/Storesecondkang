@@ -8,7 +8,7 @@
             <div class="col-lg-5">
               <span>Bag,kids</span>
               <h1>Black friday</h1>
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore</p>
+              <p>Jadikan hari pertama belanjamu meriah dan memorable</p>
               <a href="#" class="primary-btn">Shop Now</a>
             </div>
           </div>
@@ -20,7 +20,7 @@
             <div class="col-lg-5">
               <span>Bag,kids</span>
               <h1>Black friday</h1>
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore</p>
+              <p>Jadikan hari pertama belanjamu meriah dan memorable</p>
               <a href="#" class="primary-btn">Shop Now</a>
             </div>
           </div>
@@ -32,7 +32,7 @@
             <div class="col-lg-5">
               <span>Bag,kids</span>
               <h1>Black friday</h1>
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore</p>
+              <p>Jadikan hari pertama belanjamu meriah dan memorable</p>
               <a href="#" class="primary-btn">Shop Now</a>
             </div>
           </div>
