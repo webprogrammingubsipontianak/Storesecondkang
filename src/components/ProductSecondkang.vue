@@ -59,7 +59,7 @@ export default {
   },
   mounted() {
     axios
-      .get("https://storesecondkang.netlify.app/#/")
+      .get("http://storesecondkang-admin.masuk.id")
       .then((res) => (this.products = res.data.data.data))
       // eslint-disable-next-line no-console
       .catch((err) => console.log(err));
