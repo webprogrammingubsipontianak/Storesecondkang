@@ -121,7 +121,7 @@ export default {
     }
 
     axios
-      .get("http://127.0.0.1:8000/api/products", {
+      .get("https://storesecondkang-admin.masuk.id/api/products", {
         params: {
           id: this.$route.params.id,
         },
