@@ -171,7 +171,7 @@ export default {
       };
 
       axios
-        .post("https://127.0.0.1:8000/api/checkout", checkoutData)
+        .post("http://127.0.0.1:8000/api/checkout", checkoutData)
         .then(() => this.$router.push("success"))
         // eslint-disable-next-line no-console
         .catch((err) => console.log(err));
