@@ -8,7 +8,7 @@
         <div class="row">
           <div class="col-lg-12 text-left">
             <div class="breadcrumb-text product-more">
-              <router-link to="/"><i class="fa fa-home"></i>Home</router-link>
+              <router-link to="/"> <i class="fa fa-home"></i> Home </router-link>
               <span>Shopping Cart</span>
             </div>
           </div>
@@ -43,7 +43,7 @@
                           <h5>{{ keranjang.name }}</h5>
                         </td>
                         <td class="p-price first-row">Rp.{{ keranjang.price }}</td>
-                        <td @click="removeItem(keranjangUser.index)" class="delete-item">
+                        <td @click="removeItem(keranjang.id)" class="delete-item">
                           <a href="#">
                             <i class="material-icons">close</i>
                           </a>
@@ -107,7 +107,6 @@
                       No. Rekening
                       <span>2208 1996 1403</span>
                     </li>
-
                     <li class="subtotal mt-3">
                       Nama Penerima
                       <span>Akang Maulana Ad Dausy</span>
@@ -148,12 +147,22 @@ export default {
     };
   },
   methods: {
-    removeItem(index) {
+    removeItem(xx) {
+      // this.keranjangUser.splice(index, 1);
+      // const parsed = JSON.stringify(this.keranjangUser);
+      // localStorage.setItem("keranjangUser", parsed);
+      // window.location.reload();
+      let faveGifs = JSON.parse(localStorage.getItem("keranjangUser"));
+      let faveGif = faveGifs.map((faveGif) => faveGif.id);
+      let index = faveGif.findIndex((id) => id == xx);
       this.keranjangUser.splice(index, 1);
-
       const parsed = JSON.stringify(this.keranjangUser);
       localStorage.setItem("keranjangUser", parsed);
+      window.location.reload();
+      // eslint-disable-next-line no-console
+      console.log(index);
     },
+
     // fungsi mengirim data ke API
     checkout() {
       let productIds = this.keranjangUser.map(function (product) {
@@ -182,7 +191,7 @@ export default {
       try {
         this.keranjangUser = JSON.parse(localStorage.getItem("keranjangUser"));
       } catch (e) {
-        localStorage.removeItem("keranjang.id");
+        localStorage.removeItem("keranjangUser");
       }
     }
   },
