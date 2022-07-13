@@ -182,7 +182,7 @@ export default {
       try {
         this.keranjangUser = JSON.parse(localStorage.getItem("keranjangUser"));
       } catch (e) {
-        localStorage.removeItem("keranjangUser");
+        localStorage.removeItem("keranjang.id");
       }
     }
   },
