@@ -42,7 +42,7 @@
                               <h6>{{ keranjang.name }}</h6>
                             </div>
                           </td>
-                          <td @click="removeItem(keranjang.id)" class="si-close">
+                          <td @click="removeItem(keranjang.index)" class="si-close">
                             <i class="ti-close"></i>
                           </td>
                         </tr>
@@ -110,7 +110,7 @@ export default {
   computed: {
     totalHarga() {
       return this.keranjangUser.reduce(function (items, data) {
-        return items + data.price;
+        return items + parseInt(data.price);
       }, 0);
     },
   },
