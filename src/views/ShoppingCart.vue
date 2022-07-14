@@ -198,7 +198,7 @@ export default {
   computed: {
     totalHarga() {
       return this.keranjangUser.reduce(function (items, data) {
-        return items + data.price;
+        return items + parseInt(data.price);
       }, 0);
     },
     ditambahPajak() {
